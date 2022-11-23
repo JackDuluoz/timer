@@ -1,3 +1,10 @@
+//Note, preparing this code for Command Line Arguments using process.argv
+//required manipulation of input array elements into numbers using Number(),
+//which has stopped it from excluding stringed numbers when tested in VSCode
+//without CLA. Be aware that if you need this for use outside of CLA you will
+//have to figure out which instances of Number() are mucking it up and change
+//them back. Perhaps create two versions or debug more throughly in time. 
+
 const diff = (array) => {
   return array.slice(1).map((item, index) => {
     return item - array[index]
