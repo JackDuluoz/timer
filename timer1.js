@@ -1,4 +1,4 @@
-//Note, preparing this code for Command Line Arguments using process.argv
+//Note: preparing this code for Command Line Arguments using process.argv
 //required manipulation of input array elements into numbers using Number(),
 //which has stopped it from excluding stringed numbers when tested in VSCode
 //without CLA. Be aware that if you need this for use outside of CLA you will
@@ -33,14 +33,14 @@ const alarm = function (seconds) {
     }
     return 0
   })
-  console.log(sorted)
+  //console.log(sorted)
   const end = Number(sorted.pop().toString())
-  console.log(end)
+  //console.log(end)
   sorted.push(Number(end))
   let wait = diff(sorted)
-  console.log(wait)
+  //console.log(wait)
   let w = 0
-  console.log(sorted)
+  //console.log(sorted)
   let delay = sorted[0] * 1000
   for (let time = 0; time <= end; time++) {
     for (let s of sorted) {
